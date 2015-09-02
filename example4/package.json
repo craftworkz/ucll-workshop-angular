@@ -1,6 +1,9 @@
 {
-  "name": "Craftcamps_example_1",
+  "name": "Craftcamps_example_4",
   "version": "0.0.1",
   "description": "Examples for the craftcamp presentation.",
+  "dependencies": {
+    "express": "4.13.x"
+  },
 	"repository": {}
 }

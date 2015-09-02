@@ -1,14 +1,10 @@
-var express = require('express');
+var fs = require('fs');
 
-// create a new express server
-var app = express();
+fs.readFile('example.txt', function(err, data) {
+  if (err) {
+    throw err;
+  }
 
-app.listen(1337);
-console.log('Listening on 1337');
-
-app.get('/', function(request, response) {
-  response.status(200);
-  response.send('Hello world');
-
-  console.log('Request ontvangen');
+  var text = data.toString();
+  console.log(text);
 });
