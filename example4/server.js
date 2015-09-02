@@ -12,3 +12,9 @@ app.get('/', function(request, response) {
 
   console.log('Request ontvangen');
 });
+
+app.get('/test', function(request, response) {
+  var parameter = request.query.param;
+  response.status(200);
+  response.send('Your input was ' + parameter);
+});
